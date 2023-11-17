@@ -2,9 +2,9 @@ import telebot
 from random import seed
 import requests
 from services.functions import generate_pass, roll_dice
-from utils.config import API_TOKEN, BOT_USERNAME
+from utils.config import BOT_TOKEN, BOT_USERNAME
 from utils.logger import logging as logger
-bot = telebot.TeleBot(API_TOKEN)
+bot = telebot.TeleBot(BOT_TOKEN)
 seed(1)
 
 @bot.message_handler(content_types=['text'])
